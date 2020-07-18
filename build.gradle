@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
+}
+
+group 'com.java.learning.springboot'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:2.1.8.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-actuator:2.1.8.RELEASE")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
